@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KORA — Aplicación móvil de asistencia silenciosa para situaciones de peligro. Activación discreta, geolocalización en tiempo real y comunicación con redes de apoyo." />
+  <title>KORA — Asistencia silenciosa, acción inmediata</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,800&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Ruido de fondo -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- Navegación -->
+  <header class="nav">
+    <a href="#top" class="nav__logo">
+      <span class="nav__logo-mark">◐</span>
+      <span class="nav__logo-text">KORA</span>
+    </a>
+    <nav class="nav__menu" aria-label="Menú principal">
+      <a href="#producto">Producto</a>
+      <a href="#modulos">Módulos</a>
+      <a href="#requisitos">Requisitos</a>
+      <a href="#caso-uso">Caso de uso</a>
+      <a href="#futuro">Futuro</a>
+    </nav>
+    <button class="nav__cta" type="button">Solicitar demo</button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__badge">
+        <span class="pulse"></span>
+        <span>Sistema activo · v1.0</span>
+      </div>
+      <h1 class="hero__title">
+        Asistencia <em>silenciosa</em>.<br />
+        Acción <span class="hero__title-accent">inmediata</span>.
+      </h1>
+      <p class="hero__sub">
+        KORA es una aplicación móvil que brinda asistencia a personas en situación de peligro mediante una activación discreta, geolocalización en tiempo real y comunicación directa con redes de apoyo y fuerzas de seguridad.
+      </p>
+      <div class="hero__actions">
+        <a href="#producto" class="btn btn--primary">Conocer el producto</a>
+        <a href="#caso-uso" class="btn btn--ghost">Ver cómo funciona →</a>
+      </div>
+
+      <ul class="hero__stats" role="list">
+        <li>
+          <strong>99.9%</strong>
+          <span>Disponibilidad mensual</span>
+        </li>
+        <li>
+          <strong>100K</strong>
+          <span>Usuarios concurrentes</span>
+        </li>
+        <li>
+          <strong>AES-256</strong>
+          <span>Cifrado de datos</span>
+        </li>
+        <li>
+          <strong>iOS + Android</strong>
+          <span>Multiplataforma</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Mockup decorativo del teléfono -->
+    <div class="hero__phone" aria-hidden="true">
+      <div class="phone">
+        <div class="phone__notch"></div>
+        <div class="phone__screen">
+          <div class="phone__status">
+            <span class="phone__status-dot"></span>
+            ALERTA ACTIVA
+          </div>
+          <div class="phone__map">
+            <div class="phone__map-grid"></div>
+            <div class="phone__map-pulse">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="phone__info">
+            <div class="phone__info-row">
+              <span>Ubicación</span>
+              <span>−34.59, −58.40</span>
+            </div>
+            <div class="phone__info-row">
+              <span>Contactos</span>
+              <span>3 notificados</span>
+            </div>
+            <div class="phone__info-row">
+              <span>Grabación</span>
+              <span class="phone__rec">● REC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTO -->
+  <section class="section" id="producto">
+    <div class="section__head">
+      <span class="section__kicker">01 · Alcance</span>
+      <h2 class="section__title">¿Qué es <em>KORA</em>?</h2>
+    </div>
+
+    <div class="producto">
+      <div class="producto__main">
+        <p>
+          A diferencia de los sistemas tradicionales de alerta o botones de pánico, KORA está diseñada para ser utilizada por <strong>cualquier persona de la población general</strong>, sin necesidad de contar con una denuncia previa o una orden judicial.
+        </p>
+        <p>
+          Su funcionamiento se basa en tecnologías similares a las alarmas de seguridad domésticas y vehiculares: <em>sensores de activación, respuestas automáticas y mecanismos de disuasión pasiva</em>.
+        </p>
+        <p>
+          KORA se proyecta como una plataforma escalable, capaz de adaptarse a distintos entornos mediante licencias corporativas, institucionales o gubernamentales, fomentando su adopción en contextos educativos, laborales y comunitarios.
+        </p>
+      </div>
+
+      <aside class="producto__value">
+        <h3>Valor del producto</h3>
+        <ul role="list">
+          <li><span>↦</span> Detección temprana de situaciones de riesgo</li>
+          <li><span>↦</span> Intervención rápida ante emergencias</li>
+          <li><span>↦</span> Geolocalización en tiempo real</li>
+          <li><span>↦</span> Grabación automática de evidencia</li>
+          <li><span>↦</span> Disuasión pasiva sin acción visible</li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Público objetivo -->
+    <div class="publico">
+      <h3 class="publico__title">Público objetivo</h3>
+      <div class="publico__grid">
+        <article>
+          <div class="publico__icon">⏱</div>
+          <h4>Trabajadores nocturnos</h4>
+          <p>Personas que circulan en horarios nocturnos o zonas de riesgo.</p>
+        </article>
+        <article>
+          <div class="publico__icon">⌂</div>
+          <h4>Población general</h4>
+          <p>Personas de todas las edades, con o sin antecedentes de violencia.</p>
+        </article>
+        <article>
+          <div class="publico__icon">✦</div>
+          <h4>Grupos vulnerables</h4>
+          <p>Estudiantes, niños, adultos mayores y personas con discapacidad.</p>
+        </article>
+        <article>
+          <div class="publico__icon">▣</div>
+          <h4>Instituciones</h4>
+          <p>Municipios, escuelas, empresas de transporte o logística.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÓDULOS -->
+  <section class="section section--alt" id="modulos">
+    <div class="section__head">
+      <span class="section__kicker">02 · Arquitectura funcional</span>
+      <h2 class="section__title">Ocho módulos. <em>Una sola promesa.</em></h2>
+      <p class="section__intro">
+        KORA está construida sobre un sistema modular que permite responder a distintos escenarios de emergencia, desde la activación silenciosa hasta la gestión administrativa.
+      </p>
+    </div>
+
+    <div class="modulos">
+      <article class="modulo">
+        <div class="modulo__num">01</div>
+        <h3>Identidad Segura</h3>
+        <p>Registro y autenticación con validación por email. Datos clave como nombre, contactos de emergencia, dirección y condiciones médicas, almacenados de forma encriptada.</p>
+        <span class="modulo__tag">Encriptación</span>
+      </article>
+
+      <article class="modulo">
+        <div class="modulo__num">02</div>
+        <h3>Activación Inteligente</h3>
+        <p>Modos configurables de activación: botón de encendido, agitar el dispositivo o comando de voz. Con sensibilidad ajustable para evitar falsas alarmas.</p>
+        <span class="modulo__tag">Configurable</span>
+      </article>
+
+      <article class="modulo">
+        <div class="modulo__num">03</div>
+        <h3>Localización y Seguimiento</h3>
+        <p>Envío y actualización de ubicación en tiempo real. Detección de patrones de movimiento y mapa interactivo para contactos y centro de monitoreo.</p>
+        <span class="modulo__tag">GPS · Tiempo real</span>
+      </article>
+
+      <article class="modulo">
+        <div class="modulo__num">04</div>
+        <h3>Comunicación de Emergencia</h3>
+        <p>Notificaciones automáticas a contactos y al monitor con mensajes personalizados. Escalamiento a servicios de emergencia vía API o interacción humana.</p>
+        <span class="modulo__tag">API · SMS · Push</span>
+      </article>
+
+      <article class="modulo">
+        <div class="modulo__num">05</div>
+        <h3>Evidencia y Disuasión</h3>
+        <p>Grabación automática de audio o video al activar la alerta. Interfaz disfrazada (calculadora, notas) y simulación de llamadas falsas para distraer al agresor.</p>
+        <span class="modulo__tag">Camuflada</span>
+      </article>
+
+      <article class="modulo">
+        <div class="modulo__num">06</div>
+        <h3>Zonas y Rutas Seguras</h3>
+        <p>Registro de zonas frecuentadas, marcado de áreas peligrosas y rutas habituales. Alertas si el usuario se desvía en situación de riesgo.</p>
+        <span class="modulo__tag">Comunitario</span>
+      </article>
+
+      <article class="modulo">
+        <div class="modulo__num">07</div>
+        <h3>Panel Administrativo</h3>
+        <p>Herramienta para licencias múltiples corporativas o institucionales. Estadísticas de uso, alertas generadas, tiempos de respuesta y exportación de reportes.</p>
+        <span class="modulo__tag">B2B · Gobierno</span>
+      </article>
+
+      <article class="modulo">
+        <div class="modulo__num">08</div>
+        <h3>Retroalimentación y Soporte</h3>
+        <p>Reportes de uso, encuestas de satisfacción, sugerencias y notificaciones de error. Soporte técnico en tiempo real vía chat o correo electrónico.</p>
+        <span class="modulo__tag">Mejora continua</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- REQUISITOS FUNCIONALES -->
+  <section class="section" id="requisitos">
+    <div class="section__head">
+      <span class="section__kicker">03 · Especificación</span>
+      <h2 class="section__title">Requisitos <em>funcionales</em></h2>
+    </div>
+
+    <div class="reqs">
+      <ul class="reqs__list">
+        <li><code>01</code> Registro y autenticación segura de usuarios</li>
+        <li><code>02</code> Formulario de datos personales y contactos de emergencia</li>
+        <li><code>03</code> Activación de alerta mediante gestos físicos o comandos configurables</li>
+        <li><code>04</code> Envío automático de ubicación en tiempo real a contactos seleccionados</li>
+        <li><code>05</code> Notificación y monitoreo por operador o sistema automatizado</li>
+        <li><code>06</code> Registro histórico de alertas, ubicaciones y trayectos</li>
+        <li><code>07</code> Interfaz camuflada para evitar detección por agresores</li>
+        <li><code>08</code> Simulación de llamadas o mensajes de distracción</li>
+        <li><code>09</code> Activación de grabación automática de audio o video</li>
+        <li><code>10</code> Gestión de zonas seguras y rutas frecuentes</li>
+        <li><code>11</code> Configuración de nivel de sensibilidad para evitar falsas alarmas</li>
+        <li><code>12</code> Acceso administrativo para entidades con licencias múltiples</li>
+        <li><code>13</code> Sistema de retroalimentación o reporte de uso</li>
+        <li><code>14</code> Panel de control para visualizar estadísticas y alertas</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- INTERFACES EXTERNAS -->
+  <section class="section section--alt">
+    <div class="section__head">
+      <span class="section__kicker">04 · Interfaces externas</span>
+      <h2 class="section__title">Conectada al <em>mundo físico</em> y digital</h2>
+    </div>
+
+    <div class="interfaces">
+      <article class="interfaz">
+        <h3><span>UI</span> Interfaz de Usuario</h3>
+        <ul role="list">
+          <li>Interfaz camuflada (calculadora, notas, etc.)</li>
+          <li>Activación con gestos simples y comandos de voz</li>
+          <li>Pantalla de inicio personalizada</li>
+          <li>Retroalimentación visual discreta</li>
+          <li>Acceso a configuración protegido (PIN, biometría)</li>
+          <li>Mapa de seguimiento en tiempo real</li>
+          <li>Historial de eventos y grabaciones</li>
+        </ul>
+      </article>
+
+      <article class="interfaz">
+        <h3><span>HW</span> Hardware</h3>
+        <ul role="list">
+          <li>Acelerómetro y giroscopio para gestos</li>
+          <li>Activación desde botón de encendido</li>
+          <li>Cámara y micrófono para grabación</li>
+          <li>GPS para ubicación en tiempo real</li>
+          <li>Vibración como confirmación de activación</li>
+        </ul>
+      </article>
+
+      <article class="interfaz">
+        <h3><span>SW</span> Software</h3>
+        <ul role="list">
+          <li>Compatible con Android 9.0+ e iOS 14+</li>
+          <li>Sincronización cloud (Google Drive, iCloud, propio)</li>
+          <li>Integración API con servicios de emergencia</li>
+          <li>Panel web administrativo para instituciones</li>
+        </ul>
+      </article>
+
+      <article class="interfaz">
+        <h3><span>NET</span> Comunicación</h3>
+        <ul role="list">
+          <li>Envío automatizado de SMS y notificaciones push</li>
+          <li>Comunicación cifrada (HTTPS, TLS)</li>
+          <li>Conexión en tiempo real con centro de monitoreo</li>
+          <li>Mensajes personalizados definidos por el usuario</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- NO FUNCIONALES -->
+  <section class="section" id="no-funcionales">
+    <div class="section__head">
+      <span class="section__kicker">05 · Requisitos no funcionales</span>
+      <h2 class="section__title">Construida para <em>resistir</em></h2>
+    </div>
+
+    <div class="nofun">
+      <article class="nofun__card nofun__card--featured">
+        <header>
+          <span class="nofun__icon">🔒</span>
+          <h3>Seguridad</h3>
+        </header>
+        <p>
+          Cifrado en tránsito y en reposo con <strong>TLS</strong> y <strong>AES-256</strong>. Acceso protegido por autenticación biométrica, PIN o patrón. Cumplimiento de GDPR y la Ley de Datos Personales según país.
+        </p>
+        <div class="nofun__pills">
+          <span>TLS</span>
+          <span>AES-256</span>
+          <span>GDPR</span>
+          <span>MFA</span>
+        </div>
+      </article>
+
+      <article class="nofun__card">
+        <header>
+          <span class="nofun__icon">⚡</span>
+          <h3>Capacidad</h3>
+        </header>
+        <p>
+          Hasta <strong>100.000 usuarios concurrentes</strong> en etapa inicial, escalable según demanda. Hasta 10 contactos de emergencia y un historial de 50 alertas por cuenta.
+        </p>
+      </article>
+
+      <article class="nofun__card">
+        <header>
+          <span class="nofun__icon">⇄</span>
+          <h3>Compatibilidad</h3>
+        </header>
+        <p>
+          Android 9.0+ e iOS 14+. Interoperabilidad con servicios externos mediante <strong>APIs RESTful</strong>. Compatible con dispositivos con sensores básicos.
+        </p>
+      </article>
+
+      <article class="nofun__card">
+        <header>
+          <span class="nofun__icon">✓</span>
+          <h3>Confiabilidad</h3>
+        </header>
+        <p>
+          Disponibilidad mínima del <strong>99.9% mensual</strong>. Reintento automático ante errores de red. Registro local de alertas y subida diferida a la nube.
+        </p>
+      </article>
+
+      <article class="nofun__card">
+        <header>
+          <span class="nofun__icon">↗</span>
+          <h3>Escalabilidad</h3>
+        </header>
+        <p>
+          Arquitectura de <strong>microservicios</strong> para escalado horizontal. Expansión internacional con servidores multi-región y soporte multilingüe.
+        </p>
+      </article>
+
+      <article class="nofun__card">
+        <header>
+          <span class="nofun__icon">⚙</span>
+          <h3>Mantenibilidad</h3>
+        </header>
+        <p>
+          Código documentado y modular. Reporte automático de errores, métricas de uso y actualizaciones sin pérdida de datos del usuario.
+        </p>
+      </article>
+
+      <article class="nofun__card">
+        <header>
+          <span class="nofun__icon">♥</span>
+          <h3>Facilidad de uso</h3>
+        </header>
+        <p>
+          Interfaz intuitiva con tutorial al primer uso. Personalización sin intervención técnica. Alto contraste y compatibilidad con lectores de pantalla.
+        </p>
+      </article>
+
+      <article class="nofun__card">
+        <header>
+          <span class="nofun__icon">⊕</span>
+          <h3>Otros</h3>
+        </header>
+        <p>
+          Política de privacidad clara y visible. Modo demo o simulación para entrenamiento. Operación parcial sin conexión a internet.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CASO DE USO -->
+  <section class="section section--alt" id="caso-uso">
+    <div class="section__head">
+      <span class="section__kicker">06 · Caso de uso</span>
+      <h2 class="section__title">Activación de <em>alerta</em></h2>
+      <p class="section__intro">
+        Recorrido completo desde la detección de peligro hasta el cierre del evento. <strong>Actor principal:</strong> usuario registrado con app configurada, contactos de emergencia cargados y zonas seguras definidas.
+      </p>
+    </div>
+
+    <ol class="flujo" role="list">
+      <li class="flujo__step">
+        <span class="flujo__n">1</span>
+        <h4>Detección</h4>
+        <p>El usuario detecta una situación de peligro y decide activar la alerta.</p>
+      </li>
+      <li class="flujo__step">
+        <span class="flujo__n">2</span>
+        <h4>Activación</h4>
+        <p>Usa el método previamente configurado: tres toques en el botón de encendido, agitar el teléfono o comando de voz.</p>
+      </li>
+      <li class="flujo__step">
+        <span class="flujo__n">3</span>
+        <h4>Ejecución</h4>
+        <p>Se registra fecha y hora, se obtiene ubicación por GPS, comienza la grabación (opcional) y se envían los mensajes de alerta.</p>
+      </li>
+      <li class="flujo__step">
+        <span class="flujo__n">4</span>
+        <h4>Recepción</h4>
+        <p>El sistema de monitoreo recibe la alerta y la ubica en el mapa.</p>
+      </li>
+      <li class="flujo__step">
+        <span class="flujo__n">5</span>
+        <h4>Decisión</h4>
+        <p>El monitor (humano o automatizado) decide llamar a las autoridades o confirmar veracidad de la alerta.</p>
+      </li>
+      <li class="flujo__step">
+        <span class="flujo__n">6</span>
+        <h4>Seguimiento</h4>
+        <p>El sistema continúa monitoreando hasta que la alerta sea desactivada o las autoridades lleguen al lugar.</p>
+      </li>
+      <li class="flujo__step">
+        <span class="flujo__n">7</span>
+        <h4>Informe</h4>
+        <p>Se genera un informe detallado con evidencia (audio, video, ubicación, acciones tomadas) para fines legales.</p>
+      </li>
+      <li class="flujo__step flujo__step--end">
+        <span class="flujo__n">✓</span>
+        <h4>Fin del evento</h4>
+        <p>Si la alerta se cancela o el usuario regresa a una zona segura, el sistema desactiva la grabación y notificaciones.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- FUTURO -->
+  <section class="section" id="futuro">
+    <div class="section__head">
+      <span class="section__kicker">07 · Roadmap</span>
+      <h2 class="section__title">Lo que <em>viene</em></h2>
+      <p class="section__intro">
+        Funcionalidades planificadas para futuras versiones, orientadas a anticipación, integración con hardware externo y robustez ante condiciones extremas.
+      </p>
+    </div>
+
+    <div class="futuro">
+      <article class="futuro__item">
+        <span class="futuro__tag">Prioridad alta</span>
+        <h3>Modo sin conexión</h3>
+        <p>Activación de un sistema alternativo por SMS cuando no hay internet, enviando ubicación estimada y alerta a los contactos preconfigurados.</p>
+      </article>
+      <article class="futuro__item">
+        <span class="futuro__tag">IA</span>
+        <h3>Preventivo inteligente</h3>
+        <p>Aprendizaje automático del comportamiento del usuario para detectar patrones inusuales: zonas no habituales a horas atípicas, caminar en zigzag, etc.</p>
+      </article>
+      <article class="futuro__item">
+        <span class="futuro__tag">Hardware</span>
+        <h3>Integración con wearables</h3>
+        <p>Sincronización con relojes inteligentes y pulseras con sensores de caída, ritmo cardíaco acelerado o botón de pánico físico.</p>
+      </article>
+      <article class="futuro__item">
+        <span class="futuro__tag">IoT</span>
+        <h3>Dispositivos domésticos</h3>
+        <p>Vinculación con Alexa, Google Home y otros ecosistemas para enviar alertas desde el hogar por voz o botón oculto.</p>
+      </article>
+      <article class="futuro__item">
+        <span class="futuro__tag">Personalización</span>
+        <h3>Perfiles segmentados</h3>
+        <p>Modo escolar para niños, emergencia médica para adultos mayores, monitoreo de rutas y tiempos para trabajadores nocturnos.</p>
+      </article>
+      <article class="futuro__item">
+        <span class="futuro__tag">Legal</span>
+        <h3>Módulo de evidencia legal</h3>
+        <p>Informe automático con fecha, hora, coordenadas y grabaciones, listo para presentar ante autoridades o abogados.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <div class="cta__inner">
+      <h2>Una alerta puede cambiarlo <em>todo</em>.</h2>
+      <p>KORA está pensada para acompañar a las personas antes, durante y después de una situación de riesgo. Si querés conocer más sobre el proyecto o sumarte como institución, hablemos.</p>
+      <div class="cta__actions">
+        <a href="mailto:contacto@kora.app" class="btn btn--primary">contacto@kora.app</a>
+        <a href="#top" class="btn btn--ghost">Volver arriba ↑</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-mark">◐</span>
+        <span>KORA</span>
+      </div>
+      <p class="footer__legal">
+        Documento de especificación técnica · v1.0 · 2026<br />
+        KORA es un proyecto en desarrollo. Toda la información de los usuarios se procesa bajo estándares de cifrado AES-256 y TLS, en cumplimiento con GDPR.
+      </p>
+      <nav class="footer__nav" aria-label="Enlaces del pie">
+        <a href="#producto">Producto</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#caso-uso">Caso de uso</a>
+        <a href="#futuro">Futuro</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
